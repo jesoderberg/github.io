@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Data Science, Capital Technology University, 2025 (expected)
+* M.S. in Geographical Information Systems, Pensylvania State University, 2011
+* B.S. in Agronomy, Delaware Vally University, 1998
 
 Work experience
 ======
