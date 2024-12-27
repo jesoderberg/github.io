@@ -1,7 +1,7 @@
 # Academic Pages
 **Academic Pages is a Github Pages template for academic websites jesoderberg.**
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+![Academic Pages template example](images/homepage.png "Academic Pages template")
 
 # Getting Started
 
