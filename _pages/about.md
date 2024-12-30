@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "J.E. Soderberg Academic Pages 
+title: "J.E. Soderberg Academic Pages"
 : true
 redirect_from: 
   - /about/
