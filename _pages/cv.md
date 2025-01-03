@@ -71,6 +71,3 @@ Publications & Presentations
 * "Using Open Source Geospatial Technology in a National Environmental Regulatory Program" - FOSS4G 2009
 * "National Wetland Mapping Standards" - Federal Geographic Data Committee, 2008
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html %}
-{% endfor %}
