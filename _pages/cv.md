@@ -6,59 +6,71 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
 {% include base_path %}
 
-Education
+Education & Research Focus 
 ======
-* Ph.D in Data Science, Capital Technology University, 2025 (expected)
-* M.S. in Geographical Information Systems, Pensylvania State University, 2011
-* B.S. in Agronomy, Delaware Vally University, 1998
+* Ph.D. in Data Science, Capital Technology University, 2025 (expected)
+  * Dissertation: "Enhancing Data Accessibility and Quality Through Advanced Data Processing Techniques"
+  * Research: Automated validation of spatial data inputs, ML-driven error detection
+* M.S. in Geographical Information Systems, Pennsylvania State University, 2011
+  * Thesis: "Crowdsourcing Aquatic Resource Data Collection"
+* B.S. in Agronomy, Delaware Valley University, 1998
+  * Senior Project: Glyphosate-Resistant Agricultural Technologies
 
-Work experience
+Professional Journey 
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2013-Present: National Programs Chief
+  * Architect spatial data pipelines for Global Project Management
+  * Lead development of automated QA/QC systems for geospatial data
+  * Direct multi-team development of cloud-based GIS solutions
+  * Oversee enterprise-wide data architecture and standards
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2012-2013: Senior National Program Manager
+  * Led program execution of $5 Billion annual federal appropriation
+  * Implemented innovative data models for federal budget processes
+  * Managed enterprise-wide data management systems
+  * Established data governance frameworks
 
-* Summer 2015: 
-  * 
-  * 
-  * 
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2006-2012: Senior National Regulatory Manager
+  * Created custom GIS applications for federal regulatory management 
+  * Developed web-based data collection and mapping solutions
+  * Automated data workflow and pipeline efficiencies
+  * Standardized regulatory data collection processes
 
-Publications
+* 2001-2006: Project Manager
+  * Evaluated complex projects under Clean Water Act and Rivers and Harbors Act
+  * Developed web-based data collection and mapping solutions
+  * Implemented GIS-based project tracking systems
+
+Technical Arsenal 
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* Data Engineering & Programming
+  * Python (pandas, NumPy, scikit-learn)
+  * SQL (PostgreSQL, PostGIS)
+  * Git/GitHub for version control
+  * ETL Pipeline Development
+
+* Geospatial Technologies
+  * ArcGIS Enterprise & Pro
+  * QGIS & Open Source GIS
+  * Remote Sensing (ENVI, Google Earth Engine)
+  * Spatial Database Management
+
+* Web Development & Automation
+  * JavaScript/HTML/CSS
+  * Web scraping (Beautiful Soup, Selenium)
+  * RESTful APIs
+  * Cloud Infrastructure (AWS, Azure)
+
+Publications & Presentations 
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+{% include publications.html %}
+* "Crowdsourcing Aquatic Resource Data Collection: Exploring Effective Methods to Collect and Rectify Citizen-Contributed Data" - AGU 2011
+* "Utilizing New Technology and GIS to Improve Permitting Programs" - Association of State Wetland Managers, 2009
+* "Using Open Source Geospatial Technology in a National Environmental Regulatory Program" - FOSS4G 2009
+* "National Wetland Mapping Standards" - Federal Geographic Data Committee, 2008
+
+{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}
