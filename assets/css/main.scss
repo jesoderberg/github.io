@@ -31,46 +31,41 @@ body {
     background-color: #f0f5f9;
 }
 
-/* First, we'll set up a container for our overall layout */
-.initial-content,
-.search-content {
+.initial-content {
     @media (min-width: 80em) {
-        max-width: 1440px;
-        margin: 0 auto; /* This centers the entire container */
+        display: grid;
+        grid-template-columns: 250px minmax(0, 1fr);
+        gap: 2em;
+        max-width: 1280px;
+        margin: 0 auto;
         padding: 0 2em;
-        position: relative; /* This helps with positioning child elements */
     }
 }
 
-/* Now we'll position the sidebar absolutely to prevent it from affecting the main content flow */
 .sidebar {
     @media (min-width: 80em) {
-        position: absolute;
-        left: 2em; /* Matches the container padding */
         width: 250px;
         background-color: white;
         padding: 1.5em;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-top: 1em;
 
         &.sticky {
-            position: fixed;
+            position: sticky;
             top: 2em;
         }
     }
 }
 
-/* Finally, we'll center the main content within the container */
 #main {
     @media (min-width: 80em) {
-        max-width: 960px; /* Or whatever maximum width you prefer */
-        margin: 0 auto; /* This centers the main content */
-        padding: 2em;
         background-color: white;
-        border-radius: 20px;
+        padding: 2em;
+        border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        /* Add left margin to prevent overlap with sidebar */
-        margin-left: calc(250px + 2em);
+        margin-top: 1em;
+        width: 100%;
     }
 }
 
@@ -103,7 +98,7 @@ body {
     
     h1, h2, h3, h4, h5, h6 {
         color: #2c3e50;
-        margin-top: 1.5em;
+        margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
 }
