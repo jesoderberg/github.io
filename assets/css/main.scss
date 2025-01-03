@@ -65,9 +65,9 @@ body {
     @media (min-width: 80em) {
         max-width: 960px; /* Or whatever maximum width you prefer */
         margin: 0 auto; /* This centers the main content */
-        padding: 2em;
+        padding: 10em;
         background-color: white;
-        border-radius: 8px;
+        border-radius: 20px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         /* Add left margin to prevent overlap with sidebar */
         margin-left: calc(250px + 2em);
