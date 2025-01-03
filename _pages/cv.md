@@ -65,7 +65,6 @@ Technical Arsenal
 
 Publications & Presentations 
 ======
-{% include publications.html %}
 * "Crowdsourcing Aquatic Resource Data Collection: Exploring Effective Methods to Collect and Rectify Citizen-Contributed Data" - AGU 2011
 * "Utilizing New Technology and GIS to Improve Permitting Programs" - Association of State Wetland Managers, 2009
 * "Using Open Source Geospatial Technology in a National Environmental Regulatory Program" - FOSS4G 2009
