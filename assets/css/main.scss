@@ -31,52 +31,46 @@ body {
     background-color: #f0f5f9;
 }
 
-/* Grid container adjustments */
-.initial-content, 
+/* First, we'll set up a container for our overall layout */
+.initial-content,
 .search-content {
     @media (min-width: 80em) {
         max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 1em;
-        padding-right: 1em;
-        display: flex;
-        flex-direction: row;
+        margin: 0 auto; /* This centers the entire container */
+        padding: 0 2em;
+        position: relative; /* This helps with positioning child elements */
     }
 }
 
-/* Sidebar positioning */
+/* Now we'll position the sidebar absolutely to prevent it from affecting the main content flow */
 .sidebar {
     @media (min-width: 80em) {
+        position: absolute;
+        left: 2em; /* Matches the container padding */
         width: 250px;
-        margin-right: 2em;
-        position: relative;
-        float: none;
         background-color: white;
         padding: 1.5em;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        flex-shrink: 0;
 
         &.sticky {
-            position: sticky;
+            position: fixed;
             top: 2em;
         }
     }
 }
 
-/* Main content area */
+/* Finally, we'll center the main content within the container */
 #main {
     @media (min-width: 80em) {
-        flex: 1;
-        min-width: 0;
-        background-color: white;
+        max-width: 960px; /* Or whatever maximum width you prefer */
+        margin: 0 auto; /* This centers the main content */
         padding: 2em;
+        background-color: white;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin-left: 0;
-        width: auto;
-        float: none;
+        /* Add left margin to prevent overlap with sidebar */
+        margin-left: calc(250px + 2em);
     }
 }
 
