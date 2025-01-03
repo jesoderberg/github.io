@@ -7,7 +7,7 @@ redirect_from:
  - /about.html
 ---
 
-Data Engineering & Geospatial Analytics 🗺️
+Data Engineering & Geospatial Analytics 
 ======
 Passionate about building robust data pipelines and creating beautiful, informative maps. I specialize in transforming messy real-world data into clean, actionable insights using Python and GIS tools.
 
