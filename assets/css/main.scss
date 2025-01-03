@@ -8,6 +8,8 @@
  *  - https://twitter.com/mmistakes
  *
 */
+
+/* Theme's core imports - these provide the base functionality */
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
@@ -33,47 +35,147 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* Custom styles added after theme imports */
+/* Custom styles begin here */
+
+/* Base layout and background styling */
 body {
-    background-color: #f0f5f9; /* A soft blue-gray background */
+    background-color: #f0f5f9; /* Soft blue-gray background that's easy on the eyes */
+    line-height: 1.6;
+    color: #2c3e50;
 }
 
+/* Main content area styling */
 .page {
     background-color: white;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin: 1em auto;
 }
 
-.sidebar {
-    background-color: rgba(255,255,255,0.95);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 1em;
-}
-
+/* Navigation header styling */
 .masthead {
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 1em 0;
 }
 
+/* Archive pages styling */
 .archive {
     background-color: white;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin: 1em 0;
 }
 
-/* Improve readability of text on new background */
+/* Enhanced text readability */
 .page__content {
     p, li {
         color: #1a1a1a;
+        font-size: 1em;
+        line-height: 1.8;
     }
     
     h1, h2, h3, h4, h5, h6 {
         color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+/* Sidebar and layout adjustments */
+@media (min-width: 80em) {
+    /* Large screen layout */
+    .sidebar {
+        float: left;
+        width: calc(200px - 1em);
+        margin-right: 2em;
+        margin-left: 1em;
+        background-color: white;
+        padding: 1.5em;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        opacity: 1.0;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+
+        &.sticky {
+            top: 2em;
+            float: left;
+        }
+    }
+
+    .page {
+        float: right;
+        width: calc(100% - 250px);
+        padding-right: 2em;
+        padding-left: 1em;
+    }
+}
+
+@media (max-width: 79.9em) {
+    /* Mobile and tablet layout */
+    .sidebar {
+        margin-bottom: 2em;
+        padding: 1em;
+        width: 100%;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .page {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+/* Layout cleanup and utilities */
+.wrapper {
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+/* Enhanced link styling */
+a {
+    color: #2c3e50;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+
+    &:hover {
+        color: #34495e;
+        border-bottom-color: currentColor;
+    }
+}
+
+/* Table enhancements */
+table {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin: 1em 0;
+}
+
+/* Code block styling */
+pre, code {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+/* Button styling */
+.btn {
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 }
