@@ -39,7 +39,7 @@ Professional Journey
   * Standardized regulatory data collection processes
 
 * 2001-2006: Project Manager
-  * Evaluated complex projects under Clean Water Act and Rivers and Harbors Act
+  * Evaluated complex projects under the Clean Water Act and Rivers and Harbors Act
   * Developed web-based data collection and mapping solutions
   * Implemented GIS-based project tracking systems
 
@@ -54,7 +54,6 @@ Technical Arsenal
 * Geospatial Technologies
   * ArcGIS Enterprise & Pro
   * QGIS & Open Source GIS
-  * Remote Sensing (ENVI, Google Earth Engine)
   * Spatial Database Management
 
 * Web Development & Automation
